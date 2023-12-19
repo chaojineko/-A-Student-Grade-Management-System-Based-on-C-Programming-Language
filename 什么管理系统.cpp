@@ -1,4 +1,4 @@
-﻿/*1、学生成绩管理系统
+/*1、学生成绩管理系统
 （1）问题描述：要求以学生成绩管理业务为背景，设计一个“学生成绩管理系统”程序。
 	对于学校来讲，学生成绩管理系统是不可缺少的组成部分，主要是对学生资料的录入、浏览、插入和删除等基本功能的实现。
 
@@ -175,7 +175,7 @@ void CountStudent() {
 void FindStudent() {
 	system("cls");
 	//以学号为查找示例，其他信息查找流程基本相似
-	int stuNum;
+	long long stuNum;
 	printf("请输入查找学生学号：");
 	scanf_s("%lld", &stuNum);
 	//遍历链表查找，查找到后进行信息显示
@@ -223,7 +223,7 @@ void FindStudent() {
 //5.修改学生信息
 void ChangeStudent() {
 	//以学号为查找示例，其他信息查找流程基本相似
-	int stuNum;
+	long long stuNum;
 	printf("请输入欲修改学生的学号：");
 	scanf_s("%lld", &stuNum);
 	//遍历链表查找，查找到后进行信息显示
@@ -298,9 +298,9 @@ void ChangeStudent() {
 void DeleteStudent() {
 	system("cls");
 	//以学号为查找示例，其他信息查找流程基本相似
-	int stuNum;
+	long long stuNum;
 	printf("请输入删除学生的学号：");
-	scanf_s("%d", &stuNum);
+	scanf_s("%lld", &stuNum);
 	//遍历链表查找，查找到后进行信息显示
 	Node* p = g_pHead;
 	//记录前一个节点，删除时方便操作
