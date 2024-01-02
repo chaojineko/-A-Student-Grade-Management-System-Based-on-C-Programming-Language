@@ -24,7 +24,7 @@
 //菜单
 void Menu() {
 	printf("*************************************************\n");
-	printf("*\t欢迎使用高校学生成绩管理系统V1.0\t*\n");
+	printf("*\t\t大学生成绩管理系统\t\t*\n");
 	printf("*\t\t请选择功能\t\t\t*\n");
 	printf("*************************************************\n");
 	printf("*\t\t1.录入学生信息\t\t\t*\n");
@@ -51,8 +51,7 @@ typedef struct tagStudent {
 	int clpy;			//大学物理
 }Student;
 
-//链表
-//节点
+//链表节点
 typedef struct tagNode
 {
 	Student stu;			//学生信息
@@ -123,7 +122,7 @@ void PrintStudent() {
 	}
 	else {
 		printf("*********************************************************************************\n");
-		printf("*\t\t\t欢迎使用高校学生成绩管理系统V1.0\t\t\t*\n");
+		printf("*\t\t大学生成绩管理系统\t\t*\n");
 		printf("*********************************************************************************\n");
 		printf("*\t学号\t*\t姓名\t*\t性别\t*\t年龄\t*\t成绩\t*\t高数成绩\t*\t大学英语成绩\t*\t数据结构成绩\t*\t计算机成绩\t*\t概率论成绩\t*\t大学物理成绩\t\n");
 		printf("*********************************************************************************\n");
@@ -174,7 +173,6 @@ void CountStudent() {
 //4.查找学生信息
 void FindStudent() {
 	system("cls");
-	//以学号为查找示例，其他信息查找流程基本相似
 	long long stuNum;
 	printf("请输入查找学生学号：");
 	scanf_s("%lld", &stuNum);
@@ -222,7 +220,6 @@ void FindStudent() {
 
 //5.修改学生信息
 void ChangeStudent() {
-	//以学号为查找示例，其他信息查找流程基本相似
 	long long stuNum;
 	printf("请输入欲修改学生的学号：");
 	scanf_s("%lld", &stuNum);
@@ -297,7 +294,6 @@ void ChangeStudent() {
 //6.删除学生信息
 void DeleteStudent() {
 	system("cls");
-	//以学号为查找示例，其他信息查找流程基本相似
 	long long stuNum;
 	printf("请输入删除学生的学号：");
 	scanf_s("%lld", &stuNum);
